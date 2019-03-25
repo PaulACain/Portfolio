@@ -2,26 +2,31 @@
 <html>
   <head>
     <title>Portfolio | Paul Cain</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 <!---Navagation bar--->
 
-  <section class="container">
     <nav>
       <div class="navbar">
-        <img src="images/logo_blue.png">
-        <ul class="menu">
-          <li>About</li>
-          <li>Resume</li>
-          <li>Contact</li>
-        </ul>
+          <li><img src="images/logo_white.png" class="logo"></li>
+        <div class="dropdown">
+            <button class="dropbtn">menu</button>
+            <div class="dropbown-content">
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+            <a href="#">Contact</a>
+          </div>
       </div>
     </nav>
 
   <body>
-    <div class = header>
-    <h1>PAUl CAIN</h1>
-    <p>I am a coffee consultant turned designer
+  <section class="grid-container">
+    <div class="header">
+    <h1 class="hero">PAUl<br>CAIN</h1>
+    <p class="intro">I am a coffee consultant turned designer
       specializing in crafting playful brands
       and creative experiences for both web & mobile devices.</p>
   </div>
@@ -29,34 +34,42 @@
 
 <!---Projects--->
 
-    <div class = project>
-      <h1> 01.</h1>
-        <h2>Bubble Drive</h2>
+    <div class="project1">
+      <h1 class="project-number">01.</h1>
+        <h2 class="project-title">Bubble Drive</h2>
           <p>Ground up build out of a cloud storage solution for
             small businesses, including research, user testing and branding</p>
-              <button type="button">Prototype</button>
-                <button type="button">Case Study</button>
-                <img src="images/bubbleDrivePic.png">
+            <button class="button">Prototype</button>
+              <button class="button">Case Study</button>
     </div>
 
-    <div class = project>
-      <h1> 02.</h1>
-        <h2>Project #2</h2>
+    <div class="project1-photo">
+        <img src="images/bubbleDrivePic.png" class="pic">
+    </div>
+
+      <div class="project2">
+      <h1 class="project-number">02.</h1>
+        <h2 class="project-title">Project #2</h2>
           <p>Words words words words punch line! Words words words punchline! Words words words words Punchline!</p>
-              <button type="button">Prototype</button>
-                <button type="button">Case Study</button>
+              <button class="button"><span>Prototype</span></button>
+
+    </div>
+    <div class="project2-photo">
+        <img src="images/bubbleDrivePic.png" class="pic">
     </div>
 
-  </body>
-  <footer>
+
     <div class="footer">
-      <h1>Let's chat</h1>
+      <h1 class="project-title">Let's chat</h1>
       <ul class="links">
         <li>Linkdin</li>
         <li>Github</li>
         <li>Email</li>
         <li>Twitter</li>
         <li>Instagram</li>
+      </div>
     </ul>
-  </footer>
+  </body>
+</section>
+
 </html>

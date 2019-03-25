@@ -1,0 +1,146 @@
+*,{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rubik Italic";
+  src: url("fonts/rubik/Rubik-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Rubik Regular";
+  src: url("fonts/rubik/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+
+html {
+  font-size: 10px;
+}
+
+body{
+  background-color: #F7F7F2;
+}
+
+nav{
+  background-color: #5D6268;
+  height: 5rem;
+  display: block;
+}
+
+.dropbown{
+  float:right;
+}
+
+.logo{
+  height:1.8rem;
+  float: left;}
+
+
+.hero {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+p{
+  color: #5D6268;
+  font-family: "Montserrat Regular";
+  font-size: 1.6rem;
+  line-height: 110%;
+}
+.pic {
+  height: 100%;
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.project-title{
+  color: #5D6268;
+  font-family: "Rubik Regular";
+  font-size: 2.8rem;
+  margin: 1.6rem auto 1.6rem auto;
+
+}
+.project-number{
+  color: #F7F7F2;
+  font-family: "Rubik Italic";
+  font-size: 9.6rem;
+  -webkit-text-stroke: 3px #5D6268;
+  paint-order: stroke fill;
+}
+
+.button{
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+   background-image: linear-gradient(45deg, #5D6268, #AAA8B7), linear-gradient(45deg, #5D6268, #AAA8B7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #F7F7F2 inset;
+  font-family:"Montserrat Regular";
+  font-size: 1.6rem;
+  margin: 1.6rem 1rem  auto auto;
+  padding: .5rem;
+}
+
+
+.button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'header header'
+  'project1 project1-photo'
+  'project2 project2-photo'
+  'footer footer';
+  margin: 20px;
+  grid-gap: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project1-photo {
+  grid-area: project1-photo;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project2-photo {
+  grid-area: project2-photo;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (min-width:70rem) {
+  .grid-container {
+    grid-template-columns:  2fr 3fr 3fr 2fr;
+    grid-template-areas:
+    '. header header .'
+    '. project1 project1-photo .'
+    '. project2 project2-photo .'
+    '. footer footer .';
+  }
+}
