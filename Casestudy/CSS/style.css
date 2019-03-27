@@ -1,0 +1,52 @@
+
+*,{
+  box-sizing: border-box;
+}
+
+body{
+  margin-top: 50px;
+}
+
+.section{
+  text-align: center;
+  padding: 5rem 0 3rem;
+}
+
+p, li{
+  text-align: left;
+}
+.showcase-icon{
+  position: relative;
+  float: left;
+  max-width: 25%;
+ object-fit: fill;
+}
+.showcase-image{
+  max-width: 100%;
+}
+
+.container.section{
+  background-color: grey;
+}
+.showcase-title{
+  float: left;
+}
+
+.section.header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.header-icons {
+  max-width: 20%;
+}
+
+.compAn-pic{
+  position: relative;
+  width: 100%;
+}
+
+.process-icon {
+  position: relative;
+  max-width: 15%;
+}
