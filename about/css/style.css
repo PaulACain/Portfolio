@@ -1,0 +1,35 @@
+*,{
+  box-sizing: border-box;
+}
+
+.section{
+  border-bottom: 1px solid black;
+
+}
+.about-image {
+  max-width: 100%;
+}
+
+.about-info {
+  padding: 5rem;
+}
+
+.nav-menu{
+  
+}
+
+.logo{
+  max-width: 100%;
+}
+.tools{
+  text-align: center;
+}
+.right{
+  float: right;
+}
+
+@media (min-width:70rem) {
+  .section.b, .section.c{
+
+  }
+}
