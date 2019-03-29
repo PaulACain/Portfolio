@@ -2,26 +2,105 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Rubik Italic";
+  src: url("fonts/rubik/Rubik-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Rubik Regular";
+  src: url("fonts/rubik/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("fonts/montserrat/Montserrat-Regular.ttf");
+}
+
 body{
   background-color: #F7F7F2;
   margin: auto;
+  line-height: 3rem;
 }
-.section{
-  margin: 2rem;
+
+body.dark-theme{
+  background-color: #5D6268;
+}
+
+p {
+  color: #5D6268;
+}
+
+p.dark-theme{
+  color: white;
+}
+
+h4 {
+  color: #302D38;
+}
+
+li {
+  color: #5D6268;
+}
+
+.menu {
+  float: right;
+}
+
+.change-theme-btn{
+  cursor: pointer;
+}
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #F7F7F2;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.headers  {
+  font-family: "Rubik Regular";
+  font-size: 3.6rem;
+}
+
+.para {
+  font-family: "Montserrat Regular";
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+}
+
+.spacing {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 
-}
-.container {
-  background-color: blue;
-  border-bottom: 1px solid black;
-  padding: 3rem;
+.container.bio, .container.tools {
+  border-bottom: 1px solid #302D38;
+
 }
 
 .about-image {
   max-width: 100%;
   margin-top: 10%;
-  margin-bottom: 10%;
 }
 
 
@@ -29,12 +108,21 @@ body{
 .indent {
   margin: 0 auto;
   width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .nav-menu{
   background-color: #5D6268;
 }
 
+
+li {
+
+  display: inline;
+  padding-right: 1rem;
+
+}
 
 .logo{
   max-width: 5%;
@@ -45,12 +133,41 @@ body{
   text-align: left;
 }
 
-@media (max-width:40rem) {
+.left-padding{
+  padding-left:  5rem;
+}
+
+
+
+@media (max-width:60rem) {
   .indent {
     width: 100%;
+    margin-top: 10%;
+    margin-bottom:10%;
   }
 
+  .tools {
+    text-align: center;
   }
 
-  }
+  .headers { font-size: 2.4rem;
+    }
+
+    .para {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+    }
+
+    .left-padding{
+      padding-left:  0rem;
+    }
+    .section.d{
+      text-align: center;
+    }
+    .links {text-align: center;}
+
+    .spacing {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
 }
