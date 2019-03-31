@@ -1,25 +1,37 @@
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-};
 
-function mFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
 
-document.getElementById('change-theme-btn').addEventListener('click', function() {
-  document.body.classList.toggle('dark-theme');
+
+document.getElementById('change-theme-btn').addEventListener('click', function () {
+
+ let darkThemeEnabled = document.body.classList.toggle('dark-theme');
+ localStorage.setItem('dark-theme-enabled', darkThemeEnabled);
+
+  document.querySelector('.headers').classList.toggle('dark-theme');
+
+  document.querySelector('.para').classList.toggle('dark-theme');
+
+  document.querySelector('.tools1').classList.toggle('dark-theme');
+
+  document.querySelector('.tools2').classList.toggle('dark-theme');
+
+  document.querySelector('.para1').classList.toggle('dark-theme');
+
+  document.querySelector('.para2').classList.toggle('dark-theme');
+
+  document.querySelector('.link1').classList.toggle('dark-theme');
+
+  document.querySelector('.link2').classList.toggle('dark-theme');
+
+  document.querySelector('.link3').classList.toggle('dark-theme');
+
+  document.querySelector('.link4').classList.toggle('dark-theme');
+
+  document.querySelector('.letsChat').classList.toggle('dark-theme');
+
+  document.querySelector('.about-image').classList.toggle('greyscale');
 });
 
-
-//function myFunction(x) {
-  x.classList.toggle("change");
-};
+if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
+    document.body.classList.add('dark-theme');
+  }
