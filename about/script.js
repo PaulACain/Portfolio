@@ -35,3 +35,12 @@ document.getElementById('change-theme-btn').addEventListener('click', function (
 if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     document.body.classList.add('dark-theme');
   }
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
