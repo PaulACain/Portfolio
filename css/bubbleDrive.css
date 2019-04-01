@@ -11,23 +11,43 @@ body{
   text-align: center;
   padding: 5rem 0 3rem;
 }
+.dark-background{
+  background-color:#5D6268;
+}
+
+.medium-background{
+  background-color: #EAEAEA;
+}
 
 p, li{
   text-align: left;
+}
+
+.light-background{
+  background-color: #F7F7F2;
+}
+
+.width-adjustment{
+  width: 80%;
+  margin: 0 auto;
+}
+.image {
+  max-width: 100%;
+  margin: 0 auto;
 }
 .showcase-icon{
   position: relative;
   float: left;
   max-width: 25%;
- object-fit: fill;
-}
-.showcase-image{
-  max-width: 100%;
+  object-fit: fill;
 }
 
-.container.section{
-  background-color: grey;
+.showcase-image{
+  max-width: 100%;
+  margin: 0 auto;
 }
+
+
 .showcase-title{
   float: left;
 }
