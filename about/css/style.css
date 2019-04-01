@@ -30,48 +30,52 @@ body{
 
 }
 
-.icon-cog {
-  color: white;
+.menu {
+  font-size: 3rem;
 }
-
 
 .topnav {
   background-color: #5D6268;
+  display: flex;
+  align-items: center;
   overflow: hidden;
+  position: relative;
+  z-index: 999;
 }
 
 .topnav a {
-  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.8rem;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #f2f2f2;
+  color: #5D6268;
 }
-
-
 
 .topnav .icon {
   display: none;
 }
 
-nav {
-  background-color: #5D6268;
-  padding-top: 1rem;
+
+.logo {
+  max-width: 5%;
+  margin: 0 auto;
 }
 
+.nav-theme-icon {
+  text-align: center;
+  flex: 1;
+}
 
 
 p {
   color: #5D6268;
 }
-
 
 
 h4 {
@@ -107,12 +111,12 @@ li {
 
 .about-image {
   max-width: 100%;
-  margin-top: 10%;
+  margin-top: 20%;
   filter: none;
 }
 
 .about-image.greyscale{
- filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 
@@ -132,11 +136,6 @@ li {
 
 }
 
-.logo {
-  max-width: 5%;
-  padding: 1%;
-  display: inline;
-}
 
 .tools{
   text-align: left;
@@ -168,36 +167,36 @@ li {
 }
 }
 
-  .indent {
-    width: 100%;
-    margin-top: 10%;
-    margin-bottom:10%;
-  }
+.indent {
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom:10%;
+}
 
-  .tools {
-    text-align: center;
-  }
+.tools {
+  text-align: center;
+}
 
-  .headers { font-size: 2.4rem;
-    }
+.headers { font-size: 2.4rem;
+}
 
-    .para {
-      font-size: 1.6rem;
-      line-height: 2.8rem;
-    }
+.para {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
 
-    .left-padding{
-      padding-left:  0rem;
-    }
+.left-padding{
+  padding-left:  0rem;
+}
 
-    .section.d{
-      text-align: center;
-    }
+.section.d{
+  text-align: center;
+}
 
-    .links {text-align: center;}
+.links {text-align: center;}
 
-    .spacing {
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
+.spacing {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 }
