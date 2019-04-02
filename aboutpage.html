@@ -15,8 +15,36 @@
   <body>
 
   <!---Navagation--->
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle" onclick="navhandler()">
+            <i class="fas fa-bars hamburger-menu"></i>
+        </span>
+    <a href="#" class="logo"><img src="images/logo_white.png" class="logo"></a>
 
-  <div class="topnav" id="myTopnav">
+    <script src="script.js"></script>
+
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">About</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Resume</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    const mainNav = document.getElementById("js-menu");
+    const navhandler = function() {
+      console.log("handler")
+      mainNav.classList.toggle("active");
+    }
+  </script>
+
+
+  <!---  <div class="topnav" id="myTopnav">
     <div href="#home" class="active"><img src="images/logo_white.png" class="logo"></div>
     <div class="nav-theme-icon">
     <img src="images/daytime.png" id="change-theme-btn" class="moon">
@@ -27,12 +55,12 @@
       <i class="fa fa-bars menu"></i>
     </a>
   <ul>
-  
+
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a href="#resume">Resume</a>
     </ul>
-  </div>
+  </div>--->
 
 
 
@@ -101,10 +129,10 @@
                 <div class="indent">
                   <h4 class="headers letsChat">Let's chat</h4>
                 <ul class="links para">
-                  <li class="link1">Linkdin</li>
-                  <li class="link2">Github</li>
-                  <li class="link3">Email</li>
-                  <li class="link4">Instagram</li>
+                  <li class="links">Linkdin</li>
+                  <li class="links">Github</li>
+                  <li class="links">Email</li>
+                  <li class="links">Instagram</li>
                   </ul>
                 </div>
                   </div>
