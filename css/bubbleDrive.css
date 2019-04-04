@@ -28,7 +28,6 @@ html {
 }
 
 body{
-  margin-top: 50px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -89,11 +88,75 @@ button{
   margin-top:3rem;
 }
 
-li {
-display: inline;
-padding-right: 1rem;
-font-family: "Montserrat Regular"
+
+/* Navagation */
+
+.navbar {
+  font-size: 18px;
+  background-color: #5D6268;
+  color: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+
 }
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 2rem;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+.nav-links{
+  font-family: "Montserrat Regular"
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+    color: #302D38;
+}
+
+a:hover {
+  color: #302D38;
+}
+
+.hamburger-menu:hover{
+    color: #302D38;
+}
+
+.logo {
+  display: inline-block;
+  width: 3rem;
+  margin-top: 1rem;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
 
 .process-sub-header{
   margin-bottom: 0;
@@ -190,6 +253,58 @@ font-family: "Montserrat Regular"
 
 .process-icon {
   max-width: 10%;
+}
+
+.connect-link{
+  text-decoration: none;
+  display: inline;
+  font-family: "Montserrat Regular";
+  color:#5D6268;
+  margin-right: 1rem;
+}
+/* hamburger menu */
+
+@media (min-width:60rem) {
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 0;
+   height: 70px;
+   align-items: center;
+ }
+
+ .main-nav {
+   display: flex;
+   margin-right: 30px;
+   flex-direction: row;
+   justify-content: flex-end;
+ }
+
+ .hamburger-menu{
+   font-size: 3rem;
+ }
+
+ .main-nav li {
+   margin: 0;
+ }
+
+ .nav-links {
+   margin-left: 40px;
+ }
+
+ .logo {
+   margin-top: 0;
+   width: 3rem;
+ }
+
+ .navbar-toggle {
+   display: none;
+ }
+
+ .logo:hover,
+ .nav-links:hover {
+   color: #302D38;
+ }
 }
 
 @media (max-width:60rem){
