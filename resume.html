@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+      <link rel="icon" href="images/favicon.ico">
+      <title>Resume | Paul Cain</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+      <link rel="stylesheet" type="text/css" href="css/resume.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+  <body>
+
+  <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle" onclick="navhandler()">
+        <i class="fas fa-bars hamburger-menu"></i>
+      </span>
+      <a href="index.html" class="logo"><img src="images/logo_white.png" class="logo"></a>
+      <script src="script.js"></script>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="aboutpage.html" class="nav-links">About</a>
+        </li>
+        <li>
+          <a href="resume.html" class="nav-links">Resume</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-links">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+    const mainNav = document.getElementById("js-menu");
+    const navhandler = function() {
+      console.log("handler")
+      mainNav.classList.toggle("active");
+    }
+  </script>
+
+  <div class="container">
+    <img src="images/resume.svg" class="resume">
+    </div>
+
+  </body>
+</html>
