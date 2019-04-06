@@ -168,6 +168,12 @@ a:hover {
   padding-bottom: 4rem;
 }
 
+.colorLogo{
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 0rem;
+}
+
 .dark-background{
   background-color:#5D6268;
   padding-top: 10rem;
@@ -199,6 +205,7 @@ a:hover {
   flex:100%;
   margin-bottom: 3rem;
   margin-top: 0 auto;
+  text-decoration: none;
 }
 
 .showcase-icon{
