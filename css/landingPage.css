@@ -243,7 +243,7 @@ button {
   margin-top: .5rem;
   margin-bottom: .5rem;
   padding-top: .5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .project-pic {
@@ -255,7 +255,6 @@ button {
   h2{
     font-size:2.8rem;
     margin-bottom: 1rem;
-    flex: 0;
   }
 
   h4{
@@ -293,7 +292,7 @@ margin-right: .5rem;
 }
 
 .chevron {
-    font-size: 2rem;
+    font-size: 0rem;
 margin-top: 2rem;
 margin-bottom: 1rem;
 }
