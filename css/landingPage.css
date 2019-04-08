@@ -238,30 +238,24 @@ button {
 }
 
 @media (max-width:70rem) {
-/* Mobile grid
 
-NEED HELP HERE!
+.container{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-top: .5rem;
+    padding-bottom: 1.5rem;
+}
 
-  .grid-container{
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-    grid-template-areas:
-    'mobile-grid-project mobile-grid-pic'
-    'mobile-grid-project mobile-grid-pic'
+.project-pic {
+  width: 100%;
+  object-fit: contain;
+}
 
-  }
-  .mobile-grid-project{
-    grid-area: mobile-grid-project;
-  }
-
-  .mobile-grid-pic{
-    grid-area: mobile-grid-pic;
-  }
-
-*/
 
   h2{
     font-size:2.8rem;
+    margin-bottom: 1rem;
+    flex: 0;
   }
 
   h4{
@@ -270,16 +264,18 @@ NEED HELP HERE!
 
   p {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
   .width-adjustment{
     width: 100%;
   }
+
   .project-number{
     width: 50%;
   }
 
 .hero-image{
-  width: 25%;
+  width: 40%;
 }
 
 .connect-link{
@@ -287,9 +283,24 @@ font-size: 1.8rem;
 margin-right: .5rem;
 }
 
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image{
+  margin-bottom: 2.5rem;
+}
+
+.chevron {
+    font-size: 2rem;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
 section{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 }
