@@ -245,6 +245,9 @@ button {
   padding-top: .5rem;
     padding-bottom: 2.5rem;
 }
+.hero-image{
+  margin-top: 2rem;
+}
 
 .project-pic {
   width: 100%;
