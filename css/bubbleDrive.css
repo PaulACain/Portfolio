@@ -201,10 +201,9 @@ a:hover {
 
 
 .showcase-button{
-  display: flex;
-  flex:100%;
+  float: left;
   margin-bottom: 3rem;
-  margin-top: 0 auto;
+  margin-top: 0;
   text-decoration: none;
 }
 

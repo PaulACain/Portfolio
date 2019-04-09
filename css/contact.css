@@ -169,5 +169,8 @@ a:hover {
     @media (max-width:60rem) {
       h2{  font-size:4rem;
       }
-      .connect-link {font-size: 2rem;}
+      .connect-link {
+        font-size: 2rem;
+        margin-right: .5rem;
+      }
     }

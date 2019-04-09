@@ -53,13 +53,11 @@ p {
 }
 
 section{
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 .container {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .width-adjustment{
@@ -95,7 +93,7 @@ section{
 }
 
 ul{
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav-links{
@@ -105,7 +103,7 @@ ul{
 .main-nav li {
   text-align: center;
   margin: 15px auto;
-    color: #302D38;
+  color: #302D38;
 }
 
 a:hover {
@@ -113,7 +111,7 @@ a:hover {
 }
 
 .hamburger-menu:hover{
-    color: #302D38;
+  color: #302D38;
 }
 
 .logo {
@@ -150,6 +148,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+    margin-top: 5rem;
 }
 
 .intro {
@@ -180,6 +179,10 @@ a:hover {
   width: 70%;
 }
 
+.project-number-2 {
+  width: 80%;
+}
+
 button {
   margin-right: 2rem;
 }
@@ -200,65 +203,65 @@ button {
 /* hamburger menu */
 
 @media (min-width:60rem) {
-.navbar {
-   display: flex;
-   justify-content: space-between;
-   padding-bottom: 0;
-   height: 70px;
-   align-items: center;
- }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
 
- .main-nav {
-   display: flex;
-   margin-right: 30px;
-   flex-direction: row;
-   justify-content: flex-end;
- }
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
- .hamburger-menu{
-   font-size: 5rem;
- }
+  .hamburger-menu{
+    font-size: 5rem;
+  }
 
- .main-nav li {
-   margin: 0;
- }
+  .main-nav li {
+    margin: 0;
+  }
 
- .nav-links {
-   margin-left: 40px;
- }
+  .nav-links {
+    margin-left: 40px;
+  }
 
- .logo {
-   width: 3rem;
- }
+  .logo {
+    width: 3rem;
+  }
 
- .navbar-toggle {
-   display: none;
- }
+  .navbar-toggle {
+    display: none;
+  }
 
- .logo:hover,
- .nav-links:hover {
-   color: #302D38;
- }
+  .logo:hover,
+  .nav-links:hover {
+    color: #302D38;
+  }
 }
 
 @media (max-width:70rem) {
 
-.container{
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  padding-top: .5rem;
+  .container{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding-top: .5rem;
     padding-bottom: 2.5rem;
-}
+  }
 
 
-.hero-image{
-  margin-top: 2rem;
-}
+  .hero-image{
+    margin-top: 2rem;
+  }
 
-.project-pic {
-  width: 100%;
-  object-fit: contain;
-}
+  .project-pic {
+    width: 100%;
+    object-fit: contain;
+  }
 
 
   h2{
@@ -274,6 +277,7 @@ button {
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
+
   .width-adjustment{
     width: 100%;
   }
@@ -282,33 +286,37 @@ button {
     width: 50%;
   }
 
-.hero-image{
-  width: 40%;
-}
+  .project-number-2{
+    width: 60%;
+  }
 
-.connect-link{
-font-size: 1.8rem;
-margin-right: .5rem;
-}
+  .hero-image{
+    width: 40%;
+  }
 
-.container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+  .connect-link{
+    font-size: 1.8rem;
+    margin-right: .5rem;
+  }
 
-.hero-image{
-  margin-bottom: 2.5rem;
-}
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.chevron {
+  .hero-image{
+    margin-bottom: 2.5rem;
+  }
+
+  .chevron {
     font-size: 0rem;
-margin-top: 2rem;
-margin-bottom: 1rem;
-}
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 
-section{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+  section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
 }
