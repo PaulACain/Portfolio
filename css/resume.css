@@ -79,9 +79,9 @@ a:hover {
 
 .logo {
   display: inline-block;
+  margin-top: .8rem;
+  margin-left: 2rem;
   width: 3rem;
-  margin-top: 1rem;
-  margin-left: 20px;
 }
 
 .navbar-toggle {
@@ -126,7 +126,6 @@ a:hover {
    }
 
    .logo {
-     margin-top: 0;
      width: 3rem;
    }
 
