@@ -225,8 +225,6 @@ li {
 @media (max-width:60rem) {
 .indent {
   width: 100%;
-  margin-top: 10%;
-  margin-bottom:10%;
 }
 
 .tools {
