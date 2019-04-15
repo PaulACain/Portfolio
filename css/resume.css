@@ -22,8 +22,26 @@
   src: url("/fonts/montserrat/Montserrat-Italic.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("/fonts/montserrat/Montserrat-Medium.ttf");
+}
+
 body{
   background-color: #F7F7F2;
+}
+
+.button{
+  font-family: "Montserrat Medium";
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #5D6268;
+  text-transform: none;
+  margin-bottom: 10%;
+}
+
+.container{
+  text-align: center;
 }
 
 .resume{
@@ -32,41 +50,36 @@ body{
 }
 
 .navbar {
-  font-size: 18px;
   background-color: #5D6268;
+  border: 1px solid #5D6268;
   color: #f2f2f2;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
+  font-size: 1.8rem;
   z-index: 999;
   position: sticky;
-  top: 0;
-
+  top: 0
 }
 
 .main-nav {
-  list-style-type: none;
   display: none;
+  list-style-type: none;
 }
 
 .nav-links,
 .logo {
-  text-decoration: none;
   color: #f2f2f2;
+  font-family: "Montserrat Regular";
   font-size: 2rem;
+  text-decoration: none;
 }
 
 ul{
-    margin-bottom: 0;
-}
-
-.nav-links{
-  font-family: "Montserrat Regular"
+  margin-bottom: 0;
 }
 
 .main-nav li {
+  color: #302D38;
+  margin: 1.5rem auto;
   text-align: center;
-  margin: 15px auto;
-    color: #302D38;
 }
 
 a:hover {
@@ -74,67 +87,70 @@ a:hover {
 }
 
 .hamburger-menu:hover{
-    color: #302D38;
+  color: #302D38;
 }
 
 .logo {
   display: inline-block;
-  margin-top: .8rem;
+  margin-top: 1rem;
   margin-left: 2rem;
   width: 3rem;
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 2rem;
-  right: 3rem;
+  display: inline;
+  top: 1rem;
+  right: 2rem;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
+  color: #F2F2F2;
   font-size: 24px;
+  position: absolute;
 }
 
 .active {
   display: block;
 }
 
-  @media (min-width:60rem) {
+
+@media (min-width:60rem) {
   .navbar {
-     display: flex;
-     justify-content: space-between;
-     padding-bottom: 0;
-     height: 70px;
-     align-items: center;
-   }
-
-   .main-nav {
-     display: flex;
-     margin-right: 30px;
-     flex-direction: row;
-     justify-content: flex-end;
-   }
-
-   .hamburger-menu{
-     font-size: 3rem;
-   }
-
-   .main-nav li {
-     margin: 0;
-   }
-
-   .nav-links {
-     margin-left: 40px;
-   }
-
-   .logo {
-     width: 3rem;
-   }
-
-   .navbar-toggle {
-     display: none;
-   }
-
-   .logo:hover,
-   .nav-links:hover {
-     color: #302D38;
-   }
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 5rem;
+    align-items: center;
   }
+
+  .main-nav {
+    display: flex;
+    margin-right: 2rem;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .hamburger-menu{
+    font-size: 3rem;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: #302D38;
+  }
+}

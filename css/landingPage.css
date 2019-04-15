@@ -22,11 +22,23 @@
   src: url("/fonts/montserrat/Montserrat-Italic.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("/fonts/montserrat/Montserrat-Medium.ttf");
+}
 /* General */
 
 html {
   font-size: 10px;
   letter-spacing: normal;
+}
+
+.button{
+  font-family: "Montserrat Medium";
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #5D6268;
+  text-transform: none;
 }
 
 body{
@@ -69,9 +81,9 @@ p {
   border: 1px solid #5D6268;
   color: #f2f2f2;
   font-size: 1.8rem;
-  padding-bottom: 1%;
   z-index: 999;
   position: sticky;
+  top: 0
 }
 
 .main-nav {
@@ -107,7 +119,7 @@ a:hover {
 
 .logo {
   display: inline-block;
-  margin-top: .8rem;
+  margin-top: 1rem;
   margin-left: 2rem;
   width: 3rem;
 }
@@ -115,8 +127,8 @@ a:hover {
 .navbar-toggle {
   position: absolute;
   display: inline;
-  top: 2rem;
-  right: 3rem;
+  top: 1rem;
+  right: 2rem;
   cursor: pointer;
   color: #F2F2F2;
   font-size: 24px;
@@ -199,19 +211,19 @@ button {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    height: 5rem;
     align-items: center;
   }
 
   .main-nav {
     display: flex;
-    margin-right: 30px;
+    margin-right: 2rem;
     flex-direction: row;
     justify-content: flex-end;
   }
 
   .hamburger-menu{
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .main-nav li {
