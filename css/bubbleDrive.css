@@ -86,6 +86,7 @@ h6{
   font-family: "Montserrat Regular";
   font-size: 2rem;
   margin-bottom: 0;
+  margin-top: 2rem;
   color: #302D38;
 }
 
@@ -205,6 +206,10 @@ a:hover {
    padding-bottom: 10rem;
  }
 
+ .blue-background{
+   background-color: #D7E5F0;
+ }
+
 
 .medium-background{
   background-color: #EAEAEA;
@@ -224,13 +229,26 @@ a:hover {
   margin: 0 auto;
 }
 
+.summaryImage{
+  width: 100%;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.solutionPic{
+  width: 100%;
+  margin: auto;
+}
 
 .showcase-button{
   float: left;
-  margin-bottom: 3rem;
+  margin-right: 2rem;
   margin-top: 0;
   text-decoration: none;
 }
+
 
 .showcase-icon{
   max-width: 40%;
@@ -360,13 +378,17 @@ a:hover {
   .process-icon {
     max-width: 15%;
   }
+
+
   .width-adjustment{
     width: auto;
     margin: 0 auto;
   }
+
   .key-insight{
     font-size: 1.4rem;
     width: 90%;
+    margin-bottom: 2%;
   }
 
   .connect-link{
