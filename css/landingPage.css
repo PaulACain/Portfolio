@@ -28,6 +28,7 @@
 }
 /* General */
 
+
 html {
   font-size: 10px;
   letter-spacing: normal;
@@ -39,6 +40,10 @@ html {
   font-weight: normal;
   color: #5D6268;
   text-transform: none;
+}
+
+.prototype {
+letter-spacing:.185rem;
 }
 
 body{
@@ -188,7 +193,7 @@ a:hover {
 }
 
 button {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .connect-link{

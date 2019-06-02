@@ -49,6 +49,10 @@ body{
   width: 100%;
 }
 
+.expandedUserFlow{
+  width: 100%;
+}
+
 .navbar {
   background-color: #5D6268;
   border: 1px solid #5D6268;
