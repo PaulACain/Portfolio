@@ -176,6 +176,10 @@ a:hover {
   border-bottom: 1px solid #5D6268;
 }
 
+.top-line{
+  margin-top: 3%;
+  border-top: 1px solid #5D6268;
+}
 
 /* Projects */
 
@@ -204,6 +208,106 @@ button {
   color:#5D6268;
   margin-right: 1rem;
   text-align: left;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.author {color: cornflowerblue;}
+
+.endorsement{
+
+  margin-top: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.section-dark{
+  background-color: #5D6268;
+
+}
+.whtieFont{
+  color: #f2f2f2;
+}
+
+.skillInners{
+  display: inline-block;
+}
+
+.skillsHeader{
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.process-title{
+  text-align: center;
+}
+
+.rightAdjust{
+}
+
+.skills{
+  margin-left: 1rem;
+  display: inline-block;
+  align-items: center;
+  text-align: left;
+}
+
+._4pxLine{
+  display: inline-block;
+  width: .5rem;
+  height: 4.5rem;
+  align-items: center;
+  background-color: #5D6268;
+}
+
+.process-icon {
+  max-width: 10%;
 }
 
 .hamburger-menu{
