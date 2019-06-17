@@ -246,6 +246,10 @@ li {
 }
 
 .links {text-align: center;}
+.center-footer-header{
+  text-align: center;
+  font-size: 2.8rem;
+}
 
 .spacing {
   margin-top: 5%;
